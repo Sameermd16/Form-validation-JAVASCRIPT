@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(128, 0, 128, 0.433);
+}
+.container{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.container .header{
+    text-align: center;
+}
+.form{
+    margin-top: 30px;
+}
+.form-control{
+    margin-top: 15px;
+    position: relative;
+}
+.form-control input{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.445);
+    font-family: inherit;
+}
+.form-control input:focus{
+    border-color: #777;
+}
+.form-control ion-icon{
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    /* display: none; */
+    visibility: hidden;
+}
+.form-control .checkmark{
+    color: green;
+}
+.form-control .exclamation{
+    color: red;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.form button{
+    font-size: 16px;
+    width: 100%;
+    color: white;
+    background-color: #8e44ad;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer
+}
+.form-control.success ion-icon.checkmark{
+    visibility: visible;
+}
+.form-control.error ion-icon.exclamation{
+    visibility: visible;
+}
+.form-control small{
+    visibility: hidden;
+    color: #e74c3c;
+}
+.form-control.error small{
+    visibility: visible;
+}
